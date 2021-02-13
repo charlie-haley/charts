@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  cisco-telnet-exporter:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-02-13T14:45:40.990160051Z"
+    description: Prometheus Exporter for TP-Link Smart Plugs
+    digest: a54da794ca76f87d4a36e4796df32d19391679bf9d657416ed94a182a424db06
+    name: cisco-telnet-exporter
+    type: application
+    urls:
+    - https://github.com/charlie-haley/private-charts/releases/download/cisco-telnet-exporter-0.1.2/cisco-telnet-exporter-0.1.2.tgz
+    version: 0.1.2
+  tplink-smartplug-exporter:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-02-13T14:45:41.048023641Z"
+    description: Prometheus Exporter for TP-Link Smart Plugs
+    digest: 6279b19826069d15c945e9dd328962757f88cb996566b2b8e95ecafb9bb2edc6
+    name: tplink-smartplug-exporter
+    type: application
+    urls:
+    - https://github.com/charlie-haley/private-charts/releases/download/tplink-smartplug-exporter-0.1.2/tplink-smartplug-exporter-0.1.2.tgz
+    version: 0.1.2
+generated: "2021-02-13T14:45:40.922916777Z"
