@@ -39,21 +39,21 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: /metrics
               port: metrics
           readinessProbe:
             httpGet:
-              path: /
+              path: /metrics
               port: metrics
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
             - name: CISCO_IP
-              value: "{{ join "," .Values.cisco.ip }}"
+              value: "{{ .Values.cisco.ip }}"
             - name: CISCO_PORT
-              value: "{{ join "," .Values.cisco.port }}"
+              value: "{{ .Values.cisco.port }}"
             - name: CISCO_PASS
-              value: "{{ join "," .Values.cisco.password }}"
+              value: "{{ .Values.cisco.password }}"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
