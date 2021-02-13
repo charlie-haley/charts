@@ -1,0 +1,19 @@
+{{- if .Values.serviceMonitor.enabled -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ template "cisco_telnet_exporter.fullname" . }}
+  labels:
+    {{- include "cisco_telnet_exporter.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ template "cisco_telnet_exporter.fullname" . }}
+      release: {{ .Release.Name }}
+  endpoints:
+    - honorLabels: true
+      path: /metrics
+      port: metrics
+  namespaceSelector:
+    any: true
+{{- end }}
