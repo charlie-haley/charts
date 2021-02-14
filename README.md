@@ -3,7 +3,7 @@ A collection of helm charts.
 
 ## Installation 
 ```
-helm repo add charlie-haley https://charlie-haley.github.io/private-charts
+helm repo add charlie-haley http://charts.charliehaley.dev
 helm repo update
 ```
 
