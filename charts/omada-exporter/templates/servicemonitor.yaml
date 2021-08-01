@@ -1,0 +1,19 @@
+{{- if .Values.serviceMonitor.enabled -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ template "omada_exporter.fullname" . }}
+  labels:
+    {{- include "omada_exporter.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ template "omada_exporter.fullname" . }}
+      release: {{ .Release.Name }}
+  endpoints:
+    - honorLabels: true
+      path: /metrics
+      port: metrics
+  namespaceSelector:
+    any: true
+{{- end }}
