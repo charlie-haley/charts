@@ -41,6 +41,17 @@ entries:
     urls:
     - https://github.com/charlie-haley/private-charts/releases/download/cisco-telnet-exporter-0.1.2/cisco-telnet-exporter-0.1.2.tgz
     version: 0.1.2
+  omada-exporter:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-08-01T14:16:14.260246337Z"
+    description: Prometheus Exporter for TP-Link Omada Controller SDN.
+    digest: 7364e5f393deeb4055981134bebd47cc44dc61dce70de61af584de300aae056b
+    name: omada-exporter
+    type: application
+    urls:
+    - https://github.com/charlie-haley/private-charts/releases/download/omada-exporter-0.1.0/omada-exporter-0.1.0.tgz
+    version: 0.1.0
   tplink-smartplug-exporter:
   - apiVersion: v2
     appVersion: 0.1.7
@@ -102,4 +113,4 @@ entries:
     urls:
     - https://github.com/charlie-haley/private-charts/releases/download/tplink-smartplug-exporter-0.1.2/tplink-smartplug-exporter-0.1.2.tgz
     version: 0.1.2
-generated: "2021-07-30T20:33:45.163152436Z"
+generated: "2021-08-01T14:16:14.26059264Z"
