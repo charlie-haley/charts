@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: "{{ include "omada_exporter.fullname" . }}-test-connection"
   labels:
-    {{- include ".labels" . | nindent 4 }}
+    {{- include "omada_exporter.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test
 spec:
