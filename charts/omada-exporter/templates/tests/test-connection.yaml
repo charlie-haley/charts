@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "{{ include ".fullname" . }}-test-connection"
+  name: "{{ include "omada_exporter.fullname" . }}-test-connection"
   labels:
     {{- include ".labels" . | nindent 4 }}
   annotations:
@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include ".fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "omada_exporter.fullname" . }}:{{ .Values.service.port }}']
   restartPolicy: Never
