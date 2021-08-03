@@ -1,4 +1,4 @@
-# private-charts
+# charts
 ![release](https://github.com/charlie-haley/private-charts/actions/workflows/release.yml/badge.svg)
 
 A collection of helm charts.
