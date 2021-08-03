@@ -48,12 +48,16 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
-            - name: CISCO_IP
-              value: "{{ .Values.cisco.ip }}"
-            - name: CISCO_PORT
-              value: "{{ .Values.cisco.port }}"
-            - name: CISCO_PASS
-              value: "{{ .Values.cisco.password }}"
+            - name: OMADA_HOST
+              value: "{{ .Values.omada.host }}"
+            - name: OMADA_USER
+              value: "{{ .Values.omada.username }}"
+            - name: OMADA_PASS
+              value: "{{ .Values.omada.password }}"
+            - name: OMADA_SITE
+              value: "{{ .Values.omada.site }}"
+            - name: OMADA_INSECURE
+              value: "{{ .Values.omada.insecure }}"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
