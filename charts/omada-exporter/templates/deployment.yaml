@@ -58,6 +58,8 @@ spec:
               value: "{{ .Values.omada.site }}"
             - name: OMADA_INSECURE
               value: "{{ .Values.omada.insecure }}"
+            - name: OMADA_EXPORTER_PORT
+              value: "9202"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
