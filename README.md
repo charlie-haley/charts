@@ -5,7 +5,7 @@ A collection of helm charts.
 
 ## Installation 
 ```
-helm repo add charlie-haley http://charts.charliehaley.dev
+helm repo add charlie-haley https://charts.charliehaley.dev
 helm repo update
 ```
 
