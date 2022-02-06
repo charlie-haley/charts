@@ -43,6 +43,16 @@ entries:
     version: 0.1.2
   omada-exporter:
   - apiVersion: v2
+    appVersion: 0.3.0
+    created: "2022-02-06T23:59:49.135966944Z"
+    description: Prometheus Exporter for TP-Link Omada Controller SDN.
+    digest: 1e1ba5c99deb0f2388d13df35128ab8c244e4e4e070a8d525b0c2fcc54e53438
+    name: omada-exporter
+    type: application
+    urls:
+    - https://github.com/charlie-haley/charts/releases/download/omada-exporter-0.3.0/omada-exporter-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 0.2.1
     created: "2022-02-06T14:44:05.858643419Z"
     description: Prometheus Exporter for TP-Link Omada Controller SDN.
@@ -223,4 +233,4 @@ entries:
     urls:
     - https://github.com/charlie-haley/private-charts/releases/download/tplink-smartplug-exporter-0.1.2/tplink-smartplug-exporter-0.1.2.tgz
     version: 0.1.2
-generated: "2022-02-06T14:44:05.858703319Z"
+generated: "2022-02-06T23:59:49.136206845Z"
