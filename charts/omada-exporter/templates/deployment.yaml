@@ -60,6 +60,8 @@ spec:
               value: "{{ .Values.omada.insecure }}"
             - name: OMADA_EXPORTER_PORT
               value: "9202"
+            - name: OMADA_SCRAPE_INTERVAL
+              value: "{{ .Values.omada.scrape_interval }}"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
