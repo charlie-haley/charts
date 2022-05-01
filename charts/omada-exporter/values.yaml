@@ -5,9 +5,9 @@
 replicaCount: 1
 
 image:
-  repository: chhaley/omada_exporter
+  repository: ghcr.io/charlie-haley/omada_exporter
   pullPolicy: IfNotPresent
-  
+
 omada:
     # host: "https://192.1.1.20" #Host of the Omada Controller SDN
     # username: "exporter"       #Username for the Omada user.
