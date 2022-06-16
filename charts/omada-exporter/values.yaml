@@ -15,6 +15,7 @@ omada:
     site: "Default"              #Site you'd like to get metrics from.
     insecure: false              #Whether to skip verifying the SSL certificate on the controller, defaults to false.
     scrape_interval: 5
+    request_timeout: 15
 
 #Enable Prometheus ServiceMonitor
 serviceMonitor:

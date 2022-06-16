@@ -62,6 +62,8 @@ spec:
               value: "9202"
             - name: OMADA_SCRAPE_INTERVAL
               value: "{{ .Values.omada.scrape_interval }}"
+            - name: OMADA_REQUEST_TIMEOUT
+              value: "{{ .Values.omada.request_timeout }}"
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
