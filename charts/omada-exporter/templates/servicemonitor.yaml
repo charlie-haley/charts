@@ -14,6 +14,8 @@ spec:
     - honorLabels: true
       path: /metrics
       port: metrics
+      scrapeTimeout:  {{ .Values.serviceMonitor.timeout }}
+      interval: {{ .Values.serviceMonitor.interval }}
   namespaceSelector:
     any: true
 {{- end }}
